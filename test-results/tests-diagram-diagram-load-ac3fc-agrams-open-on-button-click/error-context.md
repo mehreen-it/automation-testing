@@ -1,0 +1,1345 @@
+# Page snapshot
+
+```yaml
+- complementary:
+  - link "KubeQuest From container basics to cluster mastery":
+    - /url: /
+    - img
+    - heading "KubeQuest" [level=1]
+    - paragraph: From container basics to cluster mastery
+  - button:
+    - img
+  - navigation:
+    - link "Home":
+      - /url: /
+      - img
+      - text: Home
+    - link "Playground":
+      - /url: /playground
+      - img
+      - text: Playground
+    - link "Lessons":
+      - /url: /lessons
+      - img
+      - text: Lessons
+    - link "Examples":
+      - /url: /examples
+      - img
+      - text: Examples
+    - link "Challenges":
+      - /url: /challenges
+      - img
+      - text: Challenges
+    - link "K8s Debugging":
+      - /url: /k8s-debugging
+      - img
+      - text: K8s Debugging
+    - link "Arch Learning Under Development":
+      - /url: /arch-learning
+      - img
+      - text: Arch Learning
+      - img
+      - text: Under Development
+    - link "Docs":
+      - /url: /docs
+      - img
+      - text: Docs
+    - link "About & Feedback":
+      - /url: /about
+      - img
+      - text: About & Feedback
+  - img
+  - paragraph: Learner
+  - img
+  - text: Level 1
+- main:
+  - img
+  - heading "Perfect Kubernetes Designs" [level=1]
+  - paragraph: Explore production-ready Kubernetes architectures with interactive diagrams, traffic flow animations, and complete YAML configurations. Each design shows how traffic flows and includes troubleshooting guides.
+  - img
+  - heading "🚀 See How Production Traffic Flows" [level=2]:
+    - text: 🚀 See How Production Traffic Flows
+    - img
+  - paragraph: Watch live traffic • Load balancing • Auto-scaling • Fault tolerance
+  - button "See Production Traffic":
+    - img
+    - text: See Production Traffic
+    - img
+  - img
+  - text: Live Traffic Flow
+  - paragraph: See how requests flow through complex architectures
+  - img
+  - text: Enterprise Patterns
+  - paragraph: Istio, GitOps, multi-cluster, ML pipelines
+  - img
+  - text: Debug Scenarios
+  - paragraph: Real troubleshooting with step-by-step solutions
+  - img
+  - textbox "Search perfect designs by name, description, or concepts..."
+  - heading "Browse by Category" [level=3]
+  - button "📚 All Perfect Designs 41 designs"
+  - button "🌱 Basic 8 designs"
+  - button "🔧 Intermediate 6 designs"
+  - button "🚀 Advanced 5 designs"
+  - button "⚡ Production 13 designs"
+  - button "🐛 Debugging 9 designs"
+  - heading "Filter by Difficulty" [level=3]
+  - button "All Levels"
+  - button "Beginner"
+  - button "Easy"
+  - button "Intermediate"
+  - button "Advanced"
+  - button "Expert"
+  - heading "Single Pod Running a Static Website" [level=3]
+  - text: Level 1
+  - paragraph: Simple NGINX pod serving static HTML content
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: 1 Pod NGINX Container Port 80
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: External → Pod:80 → NGINX → HTML
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Pod Container Port +1
+  - img
+  - text: 5 min Basic
+  - img
+  - text: Production Ready
+  - heading "Architecture Diagram" [level=4]
+  - img
+  - text: User
+  - img
+  - img
+  - text: NGINX Pod Port 80
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Pod Exposed via NodePort Service" [level=3]
+  - text: Level 2
+  - paragraph: NGINX Pod accessible from outside cluster via NodePort
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: NGINX Pod NodePort Service Node Network
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: External:NodePort → Service → Pod:80
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Services NodePort Node Networking +1
+  - img
+  - text: 8 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Multiple Pods Load Balanced by ClusterIP" [level=3]
+  - text: Level 2
+  - paragraph: 3 replicas behind ClusterIP Service for internal load balancing
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: 3 NGINX Pods ClusterIP Service Load Balancer
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Internal → ClusterIP → Pod1|Pod2|Pod3
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Deployments Replicas Internal Services +1
+  - img
+  - text: 10 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Frontend + Backend (2 Services)" [level=3]
+  - text: Level 3
+  - paragraph: React frontend communicating with Flask backend via internal DNS
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: React Frontend Pod Flask Backend Pod 2 ClusterIP Services Internal DNS
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: External → Frontend Service → Backend Service → Database
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Multi-tier app DNS inside cluster Service Discovery +1
+  - img
+  - text: 15 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Pod with PersistentVolume" [level=3]
+  - text: Level 3
+  - paragraph: Application pod with persistent storage for data retention
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: App Pod PVC PV Storage Backend
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Pod → /data → PVC → PV → Storage
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: PVC PV StorageClasses +1
+  - img
+  - text: 12 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Pod with ConfigMap Injection" [level=3]
+  - text: Level 2
+  - paragraph: Pod loads configuration via environment variables from ConfigMap
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: ConfigMap Pod Environment Variables
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: ConfigMap → ENV → Container → Application
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: ConfigMaps Environment Variables Configuration Management
+  - img
+  - text: 8 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Microservices App with Istio + Observability" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Complete microservices architecture with service mesh, monitoring, and distributed tracing
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: 10 Microservices (Pods) Istio Service Mesh Prometheus + Grafana Kiali for mesh visualization +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Client → Istio Gateway → Service A (mTLS) → Service B → Database
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Service Mesh mTLS Circuit Breaker +2
+  - img
+  - text: 45 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Enterprise GitOps CI/CD Pipeline (ArgoCD)" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Complete GitOps workflow with ArgoCD for automated deployment and drift detection
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: GitHub/GitLab Repository ArgoCD Controller Helm Chart Repository Application Pods +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Git Repository → ArgoCD → Helm Charts → Kubernetes Cluster
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: GitOps Declarative Infrastructure Continuous Deployment +2
+  - img
+  - text: 35 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Highly Available Web App with HPA + NGINX + Redis" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Scalable web application with horizontal pod autoscaling, load balancing, and Redis caching
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Frontend Pods Backend Pods Redis Cluster HPA (Horizontal Pod Autoscaler) +2
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Users → LoadBalancer → NGINX → Frontend Pods → Backend Pods → Redis
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Horizontal Pod Autoscaling Load Balancing Session Persistence +2
+  - img
+  - text: 30 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Multi-Cluster with Global Load Balancing" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Geo-distributed Kubernetes clusters with global DNS and disaster recovery
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: EU Cluster US Cluster Global DNS Geo-based Routing +2
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Global Users → DNS → EU/US Cluster → Regional Services
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Multi-cluster Geo-routing Disaster Recovery +2
+  - img
+  - text: 50 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Stateful Database with Backup/Restore + Read Replicas" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: PostgreSQL cluster with automated backups, point-in-time recovery, and read replicas
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: PostgreSQL Primary Read Replicas PVCs with Snapshots Backup CronJobs +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: App Writes → Primary DB → Replicas ← App Reads | Backup Jobs → Storage
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: StatefulSets Database Replication Volume Snapshots +2
+  - img
+  - text: 40 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "E-commerce Platform with Kafka + MongoDB + Elastic" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Event-driven e-commerce platform with message streaming, document storage, and search
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Web App Kafka Cluster MongoDB Elasticsearch +3
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Web App → Kafka → Consumers → MongoDB | Logs → Logstash → Elasticsearch → Kibana
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Event-driven Architecture Message Streaming Document Database +2
+  - img
+  - text: 45 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "ML Training Pipeline on K8s with GPUs" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Machine learning training pipeline with GPU resources, data preparation, and model serving
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Data Prep Jobs GPU Training Pods Model Storage TensorBoard +2
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Data → Prep Jobs → GPU Training → Model Registry → Serving
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: GPU Scheduling ML Pipelines Resource Management +2
+  - img
+  - text: 40 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Zero Trust Cluster with OPA Gatekeeper + NetworkPolicy" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Security-hardened cluster with policy enforcement and network segmentation
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: OPA Gatekeeper Admission Controller NetworkPolicies RBAC Rules +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: API Request → OPA Validation → Admission → Network Policy → Resource
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Zero Trust Policy as Code Network Segmentation +2
+  - img
+  - text: 35 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Event-driven Autoscaling with KEDA + RabbitMQ" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Scalable background job processing with KEDA autoscaling based on queue metrics
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: RabbitMQ Queue KEDA ScaledObject Worker Pods Message Producers +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Producers → RabbitMQ Queue → KEDA Scaler → Worker Pods
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Event-driven Scaling Message Queues KEDA +2
+  - img
+  - text: 30 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Full Observability Stack with Logging, Tracing, Metrics" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Complete observability platform with Prometheus, Jaeger, ELK stack, and alerting
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Prometheus + Alertmanager Fluentd → Elasticsearch → Kibana OpenTelemetry Collector Jaeger +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Apps → Metrics/Logs/Traces → Collection → Storage → Visualization/Alerting
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Observability Metrics Logging +3
+  - img
+  - text: 50 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Basic Ingress Routing" [level=3]
+  - text: Level 2
+  - paragraph: User traffic routed via Ingress to a backend service with path-based routing
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Ingress Controller Ingress Resource Service Backend Pods
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: User → Ingress → Service → Pod
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Ingress Path-based Routing Load Balancing +1
+  - img
+  - text: 15 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Misconfigured Ingress Path" [level=3]
+  - text: Level 2
+  - paragraph: Ingress path doesn't match service endpoint, resulting in 404 errors
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Ingress Controller Misconfigured Ingress Service Pod
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: User → Ingress ❌ (404 Not Found)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Path Matching Ingress Rules HTTP Status Codes +1
+  - img
+  - text: 10 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Service Without Matching Pods" [level=3]
+  - text: Level 2
+  - paragraph: Service selector doesn't match any pod labels, resulting in no endpoints
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Service Pod with Wrong Labels No Endpoints
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: User → Service ❌ (No Endpoints)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Label Selectors Service Discovery Endpoints +1
+  - img
+  - text: 10 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "ClusterIP Not Exposed" [level=3]
+  - text: Level 1
+  - paragraph: App is only accessible inside cluster, not from external users
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: ClusterIP Service Internal Pods External User Blocked
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Internal Pod → Service → Pod (External User ❌)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Service Types ClusterIP Internal Networking +1
+  - img
+  - text: 10 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "NodePort Misused" [level=3]
+  - text: Level 2
+  - paragraph: NodePort exposed on wrong node IP or port, causing connection failures
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: NodePort Service Multiple Nodes Wrong Node Access
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: User → Wrong Node (Connection Refused)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: NodePort Node Selection Port Allocation +1
+  - img
+  - text: 15 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "LoadBalancer Type Service" [level=3]
+  - text: Level 2
+  - paragraph: LoadBalancer service routes external traffic to backend pods with cloud integration
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Cloud LoadBalancer LoadBalancer Service Backend Pods
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: User → LoadBalancer → Service → Pod
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: LoadBalancer Cloud Integration External IP +1
+  - img
+  - text: 20 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Readiness Probe Fails" [level=3]
+  - text: Level 3
+  - paragraph: Pod marked not ready due to failing readiness probe, excluded from service traffic
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Service Ready Pods Not Ready Pod Health Checks
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Service → Ready Pods Only (Failed Pod Excluded)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Readiness Probes Health Checks Service Endpoints +1
+  - img
+  - text: 15 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "CrashLoopBackOff Pod" [level=3]
+  - text: Level 3
+  - paragraph: Pod starts and crashes repeatedly, service cannot route traffic to unstable pod
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Deployment Crashing Pod Service Restart Policy
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Service → Healthy Pods Only (Crashing Pod Excluded)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Pod Lifecycle Restart Policies Application Debugging +1
+  - img
+  - text: 20 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "ConfigMap Missing" [level=3]
+  - text: Level 2
+  - paragraph: Application fails to start due to missing ConfigMap configuration
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Pod Missing ConfigMap Volume Mount Application Error
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Pod Startup ❌ (ConfigMap Not Found)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: ConfigMaps Volume Mounts Configuration Management +1
+  - img
+  - text: 15 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Secret Not Mounted" [level=3]
+  - text: Level 2
+  - paragraph: Secret not found in expected mount path, application fails to read credentials
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Pod Missing Secret Volume Mount Authentication Failure
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: App → Database ❌ (Credentials Not Found)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Secrets Volume Mounts Security +1
+  - img
+  - text: 15 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "ImagePullBackOff" [level=3]
+  - text: Level 2
+  - paragraph: Wrong image name or registry causes pod to fail during image pull phase
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Pod Container Registry Image Pull Error Kubelet
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Pod → Registry ❌ (Image Not Found)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Container Images Image Registries Pod Lifecycle +1
+  - img
+  - text: 10 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Pod Pending - No Node Match" [level=3]
+  - text: Level 3
+  - paragraph: Resource requests exceed node capacity, pod cannot be scheduled
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Scheduler Pod Nodes Resource Constraints
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Pod → Scheduler → No Available Nodes
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Resource Requests Node Capacity Scheduling +1
+  - img
+  - text: 20 min Debugging
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Horizontal Pod Autoscaler Triggers" [level=3]
+  - text: Level 4
+  - paragraph: CPU threshold hit triggers HPA to scale up pods automatically
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: HPA Controller Metrics Server Deployment Load Generator
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Load → CPU Metrics → HPA → Scale Up (1→3 Pods)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Horizontal Pod Autoscaler Metrics Server CPU Utilization +1
+  - img
+  - text: 25 min Advanced
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Hello World App" [level=3]
+  - text: Level 1
+  - paragraph: Simple application with Pod, ConfigMap, and Service - perfect for beginners
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Pod ConfigMap Service
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: External → Service:80 → Pod:8080
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Pod ConfigMap Service +1
+  - img
+  - text: 5 min Basic
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "CronJob + RBAC + ServiceAccount" [level=3]
+  - text: Level 4
+  - paragraph: Scheduled tasks with proper security and role-based access control
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: CronJob ServiceAccount Role RoleBinding +1
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: CronJob → Pod → ServiceAccount → RBAC → API Server
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: CronJob RBAC ServiceAccount +2
+  - img
+  - text: 20 min Advanced
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "DaemonSet for Log Collection" [level=3]
+  - text: Level 3
+  - paragraph: Deploy log collection agent on every node using DaemonSet
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: DaemonSet Node HostPath Volume Log Agent
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Node Logs → HostPath → Pod → Log Aggregator
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: DaemonSet HostPath Node-level services +1
+  - img
+  - text: 15 min Advanced
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Network Policy - Security Isolation" [level=3]
+  - text: Level 4
+  - paragraph: Restrict network traffic between pods for enhanced security
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: NetworkPolicy Frontend Pod Backend Pod Database Pod
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Frontend → Backend → Database (Controlled by NetworkPolicy)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: NetworkPolicy Security Pod isolation +1
+  - img
+  - text: 18 min Advanced
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Init Containers" [level=3]
+  - text: Level 2
+  - paragraph: Use init containers for pre-start tasks like DB migration or setup
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Init Container Main Container Shared Volume
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Init Container → Setup → Main Container
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Init Containers Pod lifecycle Setup tasks +1
+  - img
+  - text: 12 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Volume Types (EmptyDir, ConfigMap, Secret)" [level=3]
+  - text: Level 3
+  - paragraph: Demonstrate different volume types and mounting strategies
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Pod EmptyDir Volume ConfigMap Volume Secret Volume
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Volumes → Mount Points → Container File System
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Volumes EmptyDir ConfigMap +2
+  - img
+  - text: 15 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Rolling Update & Rollback" [level=3]
+  - text: Level 3
+  - paragraph: Demonstrate deployment updates, failures, and automatic rollback
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Deployment ReplicaSet Pods Rolling Update Strategy
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Old Pods → Gradual Replacement → New Pods (or Rollback)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Deployment Rolling Updates Rollback +1
+  - img
+  - text: 18 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Headless Service + StatefulSet" [level=3]
+  - text: Level 4
+  - paragraph: Demonstrate headless services and StatefulSet pod discovery
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: StatefulSet Headless Service Persistent Volumes DNS
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Client → DNS → Specific Pod (web-0, web-1, web-2)
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: StatefulSet Headless Service DNS +1
+  - img
+  - text: 20 min Advanced
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Pod Disruption Budget" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Prevent too many pod disruptions during maintenance
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: PodDisruptionBudget Deployment Pods Node Maintenance
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Node Maintenance → PDB Check → Controlled Pod Eviction
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: PodDisruptionBudget High Availability Maintenance +1
+  - img
+  - text: 15 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "ResourceQuota + LimitRange" [level=3]
+  - img
+  - text: Production Level 4
+  - paragraph: Control resource usage with quotas and limits
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: ResourceQuota LimitRange Namespace Pods
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Pod Request → LimitRange Check → ResourceQuota Check → Admission
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: ResourceQuota LimitRange Resource Management +1
+  - img
+  - text: 18 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Ingress with TLS + Cert-Manager" [level=3]
+  - img
+  - text: Production Level 5
+  - paragraph: Set up HTTPS with automatic certificate management
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: Ingress TLS Certificate Cert-Manager Let's Encrypt
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: HTTPS Request → Ingress TLS → Certificate → Backend Service
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: Ingress TLS Cert-Manager +2
+  - img
+  - text: 25 min Production
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+  - heading "Horizontal Pod Autoscaler (HPA)" [level=3]
+  - text: Level 3
+  - paragraph: CPU-based autoscaling for API deployment with configurable thresholds
+  - heading "Architecture Components" [level=4]:
+    - img
+    - text: Architecture Components
+  - text: HPA Deployment Metrics Server Pods
+  - heading "Traffic Flow" [level=4]:
+    - img
+    - text: Traffic Flow
+  - text: Load → CPU Metrics → HPA → Pod Scaling
+  - button "Click me to see traffic flow!":
+    - img
+    - text: Click me to see traffic flow!
+    - img
+  - text: View interactive architecture diagram with animated traffic flow
+  - heading "Key Concepts" [level=4]
+  - text: HPA Autoscaling CPU Metrics +1
+  - img
+  - text: 15 min Intermediate
+  - img
+  - text: Production Ready
+  - button "Copy YAML":
+    - img
+    - text: Copy YAML
+  - text: Copy Kubernetes YAML to clipboard
+  - button "Load in Playground":
+    - img
+    - text: Load in Playground
+  - text: Load this design into the interactive playground
+- button "Meet Our Team":
+  - img
+  - text: Meet Our Team
+```
