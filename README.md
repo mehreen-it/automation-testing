@@ -1,40 +1,82 @@
-This repository contains a Cypress automation project developed during my Quality Assurance Internship. The project was created to automate regression testing across a cloud-native learning platform by simulating real user interactions and validating key application workflows.
+# 🚀 Cypress End-to-End Regression Automation
 
-The automation suite was designed to reduce repetitive manual testing by automatically navigating through over 100 UI elements, verifying page transitions, and ensuring that critical user journeys functioned as expected.
+> **Quality Assurance Internship Project**
+> Automated regression testing for a cloud-native learning platform using **Cypress** and **TypeScript**.
 
-Features
-End-to-end UI automation using Cypress
-Automated regression testing for key application workflows
-Validation of navigation across 100+ interactive UI elements
-Reusable and maintainable test structure
-Written using JavaScript/TypeScript with Cypress
-Technologies
-Cypress
-JavaScript / TypeScript
-Node.js
-Git
-Project Status
+---
 
-This project was fully functional during my internship, and a demonstration video of the automation running is included in this repository.
+## 📖 Overview
 
-The automation no longer runs successfully in its original form for two reasons:
+This repository contains a **Cypress end-to-end automation project** developed during my **Quality Assurance Internship**.
 
-The application used during my internship is no longer available in the same state, so many of the pages and workflows that the tests targeted have changed or are no longer accessible.
-While continuing to develop the project after my internship, I modified parts of the automation without using a structured Git workflow. As a result, I unintentionally introduced changes that broke the original implementation.
+The project was created to automate **regression testing** by simulating real user interactions and validating critical application workflows across a cloud-native learning platform. The automation suite was designed to reduce repetitive manual testing while improving testing consistency and reliability.
 
-Although the project is no longer executable against the original environment, I have intentionally kept it available because it represents an important stage in my learning journey and demonstrates the work completed during my internship.
+Throughout the project, I automated navigation across **100+ interactive UI elements**, verified page transitions, and ensured that key user journeys functioned as expected.
 
-What I Learned
+---
 
-This project taught me much more than writing automated tests. It helped me develop practical experience in:
+## ✨ Features
 
-Designing and debugging large UI automation suites.
-Automating complex user workflows across 100+ interactive elements.
-Improving test reliability through debugging and iterative development.
-Understanding the importance of version control and Git for safely managing changes, experimenting with new features, and recovering previous working versions.
+* ✅ End-to-end UI automation using **Cypress**
+* ✅ Automated regression testing for critical application workflows
+* ✅ Validation of navigation across **100+ interactive UI elements**
+* ✅ Reusable and maintainable test structure
+* ✅ Automated user workflow verification
+* ✅ Built using **JavaScript/TypeScript**
 
-This experience significantly improved my development workflow and reinforced the value of using Git from the beginning of a project.
+---
 
-Demonstration
+## 🛠️ Technologies
 
-A demonstration video is included in this repository showing the automation executing successfully on the original internship application. While the target application has since changed, the video demonstrates the project's intended functionality and the automation developed during the internship.
+* Cypress
+* JavaScript / TypeScript
+* Node.js
+* Git
+
+---
+
+## 📌 Project Status
+
+At the time of development during my internship, this automation suite was **fully functional**, and a demonstration video of the project running is included in this repository.
+
+The automation is no longer executable in its original form for two reasons:
+
+1. **The original application has changed.**
+   The cloud-native learning platform used during my internship is no longer available in the same state, meaning several pages, elements, and workflows targeted by the automation have since changed or been removed.
+
+2. **A valuable lesson in version control.**
+   While continuing to improve the project after my internship, I experimented with changes before I had fully adopted a structured Git workflow. As a result, I unintentionally introduced changes that broke the original implementation.
+
+Although the project is no longer runnable against the original environment, I have intentionally kept it available because it represents an important stage in my QA automation journey and showcases the work completed during my internship.
+
+---
+
+## 💡 What I Learned
+
+This project taught me far more than writing automated tests. It helped me develop practical experience in:
+
+* Designing and debugging large UI automation suites
+* Automating complex user workflows across **100+ interactive UI elements**
+* Improving automation reliability through debugging and iterative development
+* Writing more maintainable and reusable test code
+* Understanding the importance of **Git** and version control for safely managing changes, experimenting with new features, and recovering previous working versions
+
+One of the biggest lessons I took away from this project was the importance of using version control from the very beginning. Since completing this project, Git has become a core part of my development workflow, and I now use structured commits and version history across all of my projects.
+
+---
+
+## 🎥 Demonstration
+
+A demonstration video is included in this repository showing the automation successfully executing on the original internship application.
+
+Although the target application has since changed, the video demonstrates the project's original functionality, including automated navigation across **100+ UI elements**, regression testing, and validation of key user workflows.
+
+---
+
+## 🌱 Reflection
+
+This repository represents an important milestone in my journey into QA Automation.
+
+Rather than removing a project that no longer runs due to changes in the original application, I chose to keep it as a record of the work completed during my internship and the lessons I learned along the way.
+
+It reflects not only the automation I built, but also how my approach to software development has evolved through experience, continuous learning, and adopting better engineering practices.
